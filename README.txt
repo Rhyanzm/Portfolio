@@ -1,1 +1,1 @@
-Portfólio v2 - Tema dark sólido com animações simples.
+Portfólio v2 - Da uma olhada, pode enviar sugestões no meu email: rhyanmilles@gmail.com
