@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyan Gabriel | Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="logo">&lt;RhyanDev/&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Meus Projetos</a></li>
+                <li><a href="#contact" class="cta-btn">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-icon"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <span class="greeting">Olá, mundo. Eu sou</span>
+            <h1>Rhyan Gabriel</h1>
+            <h2 class="typewriter">Engenharia de Software & Backend Java</h2>
+            <p>Transformando lógica em soluções digitais robustas e otimização de processos.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">Ver Projetos</a>
+                <a href="#contact" class="btn outline">Fale Comigo</a>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">01. Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Sou estudante de <strong>Engenharia de Software</strong> com foco prático em otimização de processos e desenvolvimento Backend. 
+                        Atualmente, atuo desenvolvendo aplicações internas para gestão operacional, utilizando lógica de programação para resolver problemas reais de engenharia e negócios.
+                    </p>
+                    <p>
+                        Minha transição da área técnica industrial para TI me deu uma visão única sobre como o software deve servir à operação. 
+                        Meu foco principal é o ecossistema <strong>Java (Spring), Banco de Dados e Arquitetura de Software</strong>.
+                    </p>
+                    
+                    <div class="experience-box">
+                        <h3><i class="fas fa-briefcase"></i> Experiência Atual</h3>
+                        <p><strong>Desenvolvedor Jr / Administrativo @ Adler Andaimes</strong></p>
+                        <ul>
+                            <li>Desenvolvimento de software interno para gestão de documentos.</li>
+                            <li>Automação de processos operacionais.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <div class="img-frame">
+                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=3540&auto=format&fit=crop" alt="Rhyan Gabriel Setup">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">02. Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-java"></i> <span>Java</span></div>
+                <div class="skill-card"><i class="fas fa-leaf"></i> <span>Spring Boot</span></div>
+                <div class="skill-card"><i class="fas fa-database"></i> <span>SQL / DB</span></div>
+                <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML5 & CSS3</span></div>
+                <div class="skill-card"><i class="fas fa-brain"></i> <span>Lógica & Algoritmos</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">03. Meus Projetos</h2>
+            <p class="subtitle">Clique no projeto para visualizar a documentação (PDF) internamente.</p>
+            
+            <div class="projects-grid" id="projects-container">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container center-text">
+            <h2 class="section-title">04. Entre em Contato</h2>
+            <p>Estou disponível para oportunidades em Backend Java e Desenvolvimento de Software.</p>
+            
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/rhyan-gabriel/" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Rhyanzm" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:rhyanmilles@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>rhyanmilles@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Nome do Projeto</h3>
+            <div class="pdf-container">
+                <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <p>O PDF não carregou? <a id="pdf-download-link" href="#" target="_blank">Abrir em nova aba</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-blur">
+            <p>Developed by <strong>Rhyan Gabriel</strong> &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
