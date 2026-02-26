@@ -1,23 +1,24 @@
 // --- DADOS DOS PROJETOS (Adicione novos projetos aqui) ---
 const projectsData = [
+   {
+        title: "API Restful com Spring",
+        description: "Projeto backend demonstrando CRUD completo, autenticação JWT e documentação Swagger. Focado em boas práticas de Engenharia de Software.",
+        techs: ["Java 17", "Spring Security", "PostgreSQL"],
+        pdfUrl: "assets/projeto-api.pdf" // Exemplo de PDF
+    },
     {
         title: "Sistema Gestão Adler",
-        description: "Aplicação full-stack para controle e gestão de documentos de funcionários. Otimizou processos internos reduzindo tempo de consulta em 40%.",
-        techs: ["Java", "Spring Boot", "SQL", "MVC"],
+        description: "Aplicação full-stack para controle e gestão de documentos de funcionários. Otimizou processos internos reduzindo tempo de consulta em 80%.",
+        techs: ["HTML", "CSS", "PHP", "JavaScript"],
         pdfUrl: "assets/projeto-adler.pdf" // Caminho do seu PDF
     },
     {
         title: "Grand Prix Inovação App",
         description: "Solução tecnológica industrial desenvolvida durante hackathon do SENAI. Foco em resolução de problemas práticos da indústria.",
-        techs: ["Mobile", "Lógica", "UX/UI"],
+        techs: ["Mobile", "React", "UX/UI", "Expo"],
         pdfUrl: "assets/projeto-grandprix.pdf"
     },
-    {
-        title: "API Restful com Spring",
-        description: "Projeto backend demonstrando CRUD completo, autenticação JWT e documentação Swagger. Focado em boas práticas de Engenharia de Software.",
-        techs: ["Java 17", "Spring Security", "PostgreSQL"],
-        pdfUrl: "assets/projeto-api.pdf" // Exemplo de PDF
-    }
+    
     // Para adicionar mais, basta copiar um bloco {}, colar e mudar os dados.
 ];
 
@@ -87,4 +88,5 @@ window.onclick = function(event) {
 }
 
 // Inicializar
+
 document.addEventListener('DOMContentLoaded', loadProjects);
