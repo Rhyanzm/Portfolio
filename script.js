@@ -1,25 +1,24 @@
-// --- DADOS DOS PROJETOS (Adicione novos projetos aqui) ---
 const projectsData = [
    {
         title: "API Restful com Spring",
         description: "Projeto backend demonstrando CRUD completo, autenticação JWT e documentação Swagger. Focado em boas práticas de Engenharia de Software.",
         techs: ["Java 17", "Spring Security", "PostgreSQL"],
-        pdfUrl: "assets/projeto-api.pdf" // Exemplo de PDF
+        pdfUrl: "assets/library-api.pdf" // Exemplo de PDF
     },
     {
         title: "Sistema Gestão Adler",
         description: "Aplicação full-stack para controle e gestão de documentos de funcionários. Otimizou processos internos reduzindo tempo de consulta em 80%.",
         techs: ["HTML", "CSS", "PHP", "JavaScript"],
-        pdfUrl: "assets/projeto-adler.pdf" // Caminho do seu PDF
+        pdfUrl: "assets/projeto-adler.pdf" 
     },
     {
-        title: "Grand Prix Inovação App",
-        description: "Solução tecnológica industrial desenvolvida durante hackathon do SENAI. Foco em resolução de problemas práticos da indústria.",
-        techs: ["Mobile", "React", "UX/UI", "Expo"],
-        pdfUrl: "assets/projeto-grandprix.pdf"
+  title: "Grand Prix Inovação App",
+  description: "Solução tecnológica industrial desenvolvida durante hackathon do SENAI. Foco em resolução de problemas práticos da indústria.",
+  techs: ["Mobile", "React", "UX/UI", "Expo"],
+  videoUrl: "https://www.youtube.com/embed/zG6pDry01lM"
+
     },
-    
-    // Para adicionar mais, basta copiar um bloco {}, colar e mudar os dados.
+  
 ];
 
 // --- CARREGAR PROJETOS ---
@@ -65,7 +64,6 @@ function openModal(index) {
     modalTitle.innerText = project.title;
     
     // Define a fonte do PDF.
-    // Dica: Se não tiver PDF ainda, coloque uma imagem ou url externa.
     pdfFrame.src = project.pdfUrl; 
     pdfLink.href = project.pdfUrl;
     
